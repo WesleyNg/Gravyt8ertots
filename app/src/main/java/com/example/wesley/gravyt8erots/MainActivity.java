@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +17,20 @@ public class MainActivity extends AppCompatActivity {
         //Hide Action bar
         getSupportActionBar().hide();
     }
+
+
+        public void onClick(View v)
+        {
+            if (findViewById(R.id.scrollView).getVisibility() == View.VISIBLE)
+            {
+                findViewById(R.id.scrollView).setVisibility(View.INVISIBLE);
+            }
+            else
+            {
+                findViewById(R.id.scrollView).setVisibility(View.VISIBLE);
+            }
+        }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
