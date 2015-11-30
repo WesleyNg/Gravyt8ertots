@@ -8,7 +8,11 @@
         android:layout_width="450dp"
         android:layout_marginLeft="450dp"
         android:layout_height="fill_parent"
-        android:background="#d3d3d3">
+        android:background="#d3d3d3"
+        android:id="@+id/scrollView"
+        android:visibility="visible"
+        >
+
 
         <RelativeLayout
             android:layout_width="fill_parent"
@@ -217,4 +221,35 @@
 
     </ScrollView>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add"
+        android:layout_alignTop="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="109dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Story"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/XLargeText"
+        android:text="My Stories"
+        android:textStyle="bold"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/scrollView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="67dp" />
 </RelativeLayout>
