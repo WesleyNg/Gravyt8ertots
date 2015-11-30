@@ -1,6 +1,33 @@
 <resources>
-    <string name="app_name">Gravyt8erots</string>
+    <string name="app_name">StoryBook</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="story_screen_title">My Stories</string>
+    <string name="new_story">New Title</string>
+    <string name="story_title_1">Mary Had A Little Lamb</string>
+    <string name="story_title_2">Harry Potter</string>
+    <string name="story_title_3">The Shining</string>
+    <string name="story_title_4">Message In A Bottle</string>
+
+    <string name="new_title_edit">New Title</string>
+    <string name="edit_date">Edited Jan 20, 2014</string>
+    <string name="select_genre">Select Genre</string>
+    <string name="comedy">Comedy</string>
+    <string name="drama">Drama</string>
+    <string name="romance">Romance</string>
+    <string name="action">Action</string>
+    <string name="bio">Bio</string>
+    <string name="horror">Horror</string>
+    <string name="mystery">Mystery</string>
+    <string name="history">History</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="scifi">Sci-Fi</string>
+    <string name="thriller">Thriller</string>
+
+    <string name="other_info">Other Info</string>
+    <string name="age_range">Age Range</string>
+    <string name="age_children">Children</string>
+    <string name="age_young_adult">Young Adult</string>
+    <string name="age_adult">Adult</string>
+
     <string name="action_settings">Settings</string>
 </resources>
