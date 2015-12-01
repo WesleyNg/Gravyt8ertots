@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="450dp"
+    android:layout_marginLeft="450dp"
+    android:layout_height="fill_parent"
+    android:background="#d3d3d3"
+    android:id="@+id/scrollView"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/save_button"
+            android:background="@drawable/save"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/save_button"
+            android:id="@+id/edit_button"
+            android:background="@drawable/edit"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/delete_button"
+            android:id="@+id/misc_button"
+            android:background="@drawable/misc"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/edit_button"
+            android:id="@+id/delete_button"
+            android:background="@drawable/delete"
+            />
+
+        <TextView android:text="@string/new_title_edit"
+            android:textStyle="bold"
+            android:id="@+id/new_title_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/save_button"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+        <TextView android:text="@string/edit_date"
+            android:id="@+id/edit_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/new_title_edit_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+        <TextView android:text="@string/select_genre"
+            android:id="@+id/select_genre_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edit_date_text"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+
+        <TextView android:id="@+id/comedy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/select_genre_text"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/humor"
+            android:contentDescription="@string/comedy"
+            />
+        <TextView android:id="@+id/drama_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/comedy_button"
+            android:layout_alignLeft="@+id/comedy_button"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/drama"
+            />
+        <TextView android:id="@+id/romance_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/drama_button"
+            android:layout_alignLeft="@+id/drama_button"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/romance"
+            />
+        <TextView android:id="@+id/action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/romance_button"
+            android:layout_alignLeft="@+id/romance_button"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/action"
+            />
+
+        <TextView android:id="@+id/bio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/comedy_button"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/bio"
+            />
+        <TextView android:id="@+id/horror_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bio_button"
+            android:layout_alignLeft="@+id/bio_button"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/horror"
+            />
+        <TextView android:id="@+id/mystery_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/horror_button"
+            android:layout_alignLeft="@+id/horror_button"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/mystery"
+            />
+
+        <TextView android:id="@+id/fantasy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bio_button"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/fantasy"
+            />
+        <TextView android:id="@+id/history_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fantasy_button"
+            android:layout_alignLeft="@+id/fantasy_button"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/history"
+            />
+        <TextView android:id="@+id/scifi_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/history_button"
+            android:layout_alignLeft="@+id/history_button"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/scifi"
+            />
+        <TextView android:id="@+id/thiller_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/scifi_button"
+            android:layout_alignLeft="@+id/scifi_button"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/thriller"
+            />
+
+        <TextView android:text="@string/other_info"
+            android:id="@+id/other_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/history_button"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+        <TextView android:text="@string/age_range"
+            android:textStyle="bold"
+            android:id="@+id/age_range_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/other_info_text"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/age_range_text"
+            android:layout_toRightOf="@+id/age_range_text"
+            android:layout_toEndOf="@+id/age_range_text">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age_children"
+                android:id="@+id/radioButton" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age_young_adult"
+                android:id="@+id/radioButton2" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age_adult"
+                android:id="@+id/radioButton3" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</ScrollView>
