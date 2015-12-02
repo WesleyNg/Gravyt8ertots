@@ -28,6 +28,9 @@
     <string name="age_children">Children</string>
     <string name="age_young_adult">Young Adult</string>
     <string name="age_adult">Adult</string>
+    <string name="classification_text">Classification</string>
+    <string name="classification_fiction">Fiction</string>
+    <string name="classification_non_fiction">Non-Fiction</string>
 
     <string name="action_settings">Settings</string>
 </resources>
