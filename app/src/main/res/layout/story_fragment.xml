@@ -53,8 +53,9 @@
             android:background="@drawable/delete"
             />
 
-        <TextView android:text="@string/new_title_edit"
+        <EditText
             android:textStyle="bold"
+            android:hint="New Title"
             android:id="@+id/new_title_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/new_title_edit_text"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="37dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             />
         <TextView android:text="@string/select_genre"
