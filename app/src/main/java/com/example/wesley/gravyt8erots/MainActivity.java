@@ -5,8 +5,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,20 +19,41 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Hide Action bar
-        getSupportActionBar().hide();
+
+        populateListView();
+        registerClickCallback();
     }
 
+    private void populateListView() {
+        String[] stories = {"Wicked", "Cyborg Book", "Harry Potter"};
 
-        public void onClick(View v)
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.story_items, stories);
+
+        ListView list = (ListView) findViewById(R.id.storyList);
+        list.setAdapter(adapter);
+    }
+
+    private void registerClickCallback() {
+        ListView list = (ListView) findViewById(R.id.storyList);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View viewClicked, int position, long id) {
+                TextView textView = (TextView) viewClicked;
+                String message = "You clicked # " + position + ", which is the story: " + textView.getText().toString();
+                Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    public void onClick(View v)
         {
-            if (findViewById(R.id.scrollView).getVisibility() == View.VISIBLE)
+            if (findViewById(R.id.story_fragment_id).getVisibility() == View.VISIBLE)
             {
-                findViewById(R.id.scrollView).setVisibility(View.INVISIBLE);
+                findViewById(R.id.story_fragment_id).setVisibility(View.INVISIBLE);
             }
             else
             {
-                findViewById(R.id.scrollView).setVisibility(View.VISIBLE);
+                findViewById(R.id.story_fragment_id).setVisibility(View.VISIBLE);
             }
         }
 
