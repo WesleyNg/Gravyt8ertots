@@ -16,41 +16,21 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="280dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="15dp"
-            android:id="@+id/save_button"
-            android:background="@drawable/save"
+            android:id="@+id/exit_button"
+            android:background="@drawable/exit"
             />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="320dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/save_button"
-            android:id="@+id/edit_button"
-            android:background="@drawable/edit"
-            />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/delete_button"
-            android:id="@+id/misc_button"
-            android:background="@drawable/misc"
-            />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/edit_button"
-            android:id="@+id/delete_button"
-            android:background="@drawable/delete"
+            android:layout_toRightOf="@+id/exit_button"
+            android:id="@+id/erase_button"
+            android:background="@drawable/erase"
             />
 
         <EditText
@@ -59,7 +39,7 @@
             android:id="@+id/new_title_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/save_button"
+            android:layout_alignTop="@+id/exit_button"
             android:layout_marginTop="50dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             />
