@@ -46,16 +46,42 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View v)
-        {
-            if (findViewById(R.id.story_fragment_id).getVisibility() == View.VISIBLE)
-            {
-                findViewById(R.id.story_fragment_id).setVisibility(View.INVISIBLE);
-            }
-            else
-            {
-                findViewById(R.id.story_fragment_id).setVisibility(View.VISIBLE);
-            }
+    {
+        switch (v.getId()) {
+            case R.id.AddButton:
+                showView();
+                break;
+            case R.id.action_button:
+                storyAttributes();
+                break;
         }
+    }
+
+    public void showView()
+    {
+        if (findViewById(R.id.story_fragment_id).getVisibility() == View.VISIBLE)
+        {
+            findViewById(R.id.story_fragment_id).setVisibility(View.INVISIBLE);
+        }
+        else
+        {
+            findViewById(R.id.story_fragment_id).setVisibility(View.VISIBLE);
+        }
+    }
+
+    public void storyAttributes()
+    {
+        if (Integer.parseInt(findViewById(R.id.action_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.action_button).setBackgroundResource(R.drawable.action_selected);
+            findViewById(R.id.action_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.action_button).setBackgroundResource(R.drawable.action);
+            findViewById(R.id.action_button).setTag(1);
+        }
+    }
 
 
     @Override

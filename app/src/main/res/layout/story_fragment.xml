@@ -25,7 +25,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="320dp"
+            android:layout_marginLeft="340dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/exit_button"
@@ -67,6 +67,8 @@
             android:layout_marginTop="40dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:background="@drawable/action"
+            android:tag="1"
+            android:onClick="onClick"
             />
         <TextView android:id="@+id/bio_button"
             android:layout_width="wrap_content"
@@ -97,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/action_button"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="110dp"
             android:layout_marginLeft="110dp"
             android:background="@drawable/fantasy"
             />
@@ -122,7 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/fantasy_button"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="110dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:background="@drawable/mystery"
             />
@@ -151,12 +153,134 @@
             android:background="@drawable/thriller"
             />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/action_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/action_button"
+            android:layout_alignRight="@id/action_button"
+            android:gravity="center"
+            android:id="@+id/action_label"
+            android:text="@string/action"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/bio_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/bio_button"
+            android:layout_alignRight="@id/bio_button"
+            android:gravity="center"
+            android:id="@+id/bio_label"
+            android:text="@string/bio"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/comedy_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/comedy_button"
+            android:layout_alignRight="@id/comedy_button"
+            android:gravity="center"
+            android:id="@+id/comedy_label"
+            android:text="@string/comedy"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/drama_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/drama_button"
+            android:layout_alignRight="@id/drama_button"
+            android:gravity="center"
+            android:id="@+id/drama_label"
+            android:text="@string/drama"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fantasy_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/fantasy_button"
+            android:layout_alignRight="@id/fantasy_button"
+            android:gravity="center"
+            android:id="@+id/fantasy_label"
+            android:text="@string/fantasy"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/horror_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/horror_button"
+            android:layout_alignRight="@id/horror_button"
+            android:gravity="center"
+            android:id="@+id/horror_label"
+            android:text="@string/horror"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/history_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/history_button"
+            android:layout_alignRight="@id/history_button"
+            android:gravity="center"
+            android:id="@+id/history_label"
+            android:text="@string/history"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/mystery_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/mystery_button"
+            android:layout_alignRight="@id/mystery_button"
+            android:gravity="center"
+            android:id="@+id/mystery_label"
+            android:text="@string/mystery"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/romance_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/romance_button"
+            android:layout_alignRight="@id/romance_button"
+            android:gravity="center"
+            android:id="@+id/romance_label"
+            android:text="@string/romance"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/scifi_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/scifi_button"
+            android:layout_alignRight="@id/scifi_button"
+            android:gravity="center"
+            android:id="@+id/scifi_label"
+            android:text="@string/scifi"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/thriller_button"
+            android:layout_marginTop="80dp"
+            android:layout_alignLeft="@id/thriller_button"
+            android:layout_alignRight="@id/thriller_button"
+            android:gravity="center"
+            android:id="@+id/thriller_label"
+            android:text="@string/thriller"
+            />
+
         <TextView android:text="@string/other_info"
             android:id="@+id/other_info_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/mystery_button"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="120dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             />
         <TextView android:text="@string/age_range"
@@ -222,7 +346,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/classification_non_fiction"
-                android:id="@+id/classification_radioButton2" />
+                android:id="@+id/classification_radioButton2"
+                android:layout_marginBottom="30dp"/>
         </RadioGroup>
 
     </RelativeLayout>
