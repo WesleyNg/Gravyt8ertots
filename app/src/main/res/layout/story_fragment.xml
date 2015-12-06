@@ -77,6 +77,8 @@
             android:layout_alignLeft="@+id/action_button"
             android:layout_marginLeft="90dp"
             android:background="@drawable/bio"
+            android:tag="1"
+            android:onClick="onClick"
             />
         <TextView android:id="@+id/comedy_button"
             android:layout_width="wrap_content"
@@ -85,6 +87,8 @@
             android:layout_alignLeft="@+id/bio_button"
             android:layout_marginLeft="90dp"
             android:background="@drawable/humor"
+            android:tag="1"
+            android:onClick="onClick"
             />
         <TextView android:id="@+id/drama_button"
             android:layout_width="wrap_content"
@@ -93,6 +97,8 @@
             android:layout_alignLeft="@+id/comedy_button"
             android:layout_marginLeft="90dp"
             android:background="@drawable/drama"
+            android:tag="1"
+            android:onClick="onClick"
             />
 
         <TextView android:id="@+id/fantasy_button"
@@ -102,6 +108,8 @@
             android:layout_marginTop="110dp"
             android:layout_marginLeft="110dp"
             android:background="@drawable/fantasy"
+            android:tag="1"
+            android:onClick="onClick"
             />
         <TextView android:id="@+id/horror_button"
             android:layout_width="wrap_content"
@@ -110,6 +118,8 @@
             android:layout_alignLeft="@+id/fantasy_button"
             android:layout_marginLeft="90dp"
             android:background="@drawable/horror"
+            android:tag="1"
+            android:onClick="onClick"
             />
         <TextView android:id="@+id/history_button"
             android:layout_width="wrap_content"
@@ -118,6 +128,8 @@
             android:layout_alignLeft="@+id/horror_button"
             android:layout_marginLeft="90dp"
             android:background="@drawable/history"
+            android:tag="1"
+            android:onClick="onClick"
             />
 
         <TextView android:id="@+id/mystery_button"
@@ -127,6 +139,8 @@
             android:layout_marginTop="110dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:background="@drawable/mystery"
+            android:tag="1"
+            android:onClick="onClick"
             />
         <TextView android:id="@+id/romance_button"
             android:layout_width="wrap_content"
@@ -135,6 +149,8 @@
             android:layout_alignLeft="@+id/mystery_button"
             android:layout_marginLeft="90dp"
             android:background="@drawable/romance"
+            android:tag="1"
+            android:onClick="onClick"
             />
         <TextView android:id="@+id/scifi_button"
             android:layout_width="wrap_content"
@@ -143,6 +159,8 @@
             android:layout_alignLeft="@+id/romance_button"
             android:layout_marginLeft="90dp"
             android:background="@drawable/scifi"
+            android:tag="1"
+            android:onClick="onClick"
             />
         <TextView android:id="@+id/thriller_button"
             android:layout_width="wrap_content"
@@ -151,6 +169,8 @@
             android:layout_alignLeft="@+id/scifi_button"
             android:layout_marginLeft="90dp"
             android:background="@drawable/thriller"
+            android:tag="1"
+            android:onClick="onClick"
             />
 
         <TextView

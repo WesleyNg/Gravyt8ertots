@@ -112,9 +112,9 @@ public class MainActivity extends AppCompatActivity {
                 String classi = "2131492998";
 
                 List<StoryClass> storyList = appDB.getAllStories();
-                for (StoryClass s : storyList){
+                for (StoryClass s : storyList) {
                     String storyT = s.getTitle();
-                    if(textView.getText().toString().equalsIgnoreCase(storyT)){
+                    if (textView.getText().toString().equalsIgnoreCase(storyT)) {
                         ageG = s.getAge();
                         classi = s.getClassi();
                     }
@@ -122,9 +122,9 @@ public class MainActivity extends AppCompatActivity {
 
                 if (findViewById(R.id.story_fragment_id) != null) {
                     Bundle bundle = new Bundle();
-                    bundle.putString("titleKey",textView.getText().toString());
-                    bundle.putString("ageKey",ageG);
-                    bundle.putString("classiKey",classi);
+                    bundle.putString("titleKey", textView.getText().toString());
+                    bundle.putString("ageKey", ageG);
+                    bundle.putString("classiKey", classi);
                     StoryFragment oldFrag = new StoryFragment();
                     oldFrag.setArguments(bundle);
                     getSupportFragmentManager().beginTransaction()
@@ -152,6 +152,36 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_button:
                 storyAttributes();
                 break;
+            case R.id.bio_button:
+                bioG();
+                break;
+            case R.id.comedy_button:
+                comedyG();
+                break;
+            case R.id.drama_button:
+                dramaG();
+                break;
+            case R.id.fantasy_button:
+                fantasyG();
+                break;
+            case R.id.horror_button:
+                horrorG();
+                break;
+            case R.id.history_button:
+                historyG();
+                break;
+            case R.id.mystery_button:
+                mysteryG();
+                break;
+            case R.id.romance_button:
+                romanceG();
+                break;
+            case R.id.scifi_button:
+                scifiG();
+                break;
+            case R.id.thriller_button:
+                thrillerG();
+                break;
         }
     }
 
@@ -168,8 +198,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
     public void storyAttributes()
     {
         if (Integer.parseInt(findViewById(R.id.action_button).getTag().toString()) == 1)
@@ -183,6 +211,142 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.action_button).setTag(1);
         }
 
+    }
+
+    public void bioG(){
+        if (Integer.parseInt(findViewById(R.id.bio_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.bio_button).setBackgroundResource(R.drawable.bio_selected);
+            findViewById(R.id.bio_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.bio_button).setBackgroundResource(R.drawable.bio);
+            findViewById(R.id.bio_button).setTag(1);
+        }
+
+    }
+
+    public void comedyG(){
+        if (Integer.parseInt(findViewById(R.id.comedy_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.comedy_button).setBackgroundResource(R.drawable.humor_selected);
+            findViewById(R.id.comedy_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.comedy_button).setBackgroundResource(R.drawable.humor);
+            findViewById(R.id.comedy_button).setTag(1);
+        }
+
+    }
+
+    public void dramaG(){
+        if (Integer.parseInt(findViewById(R.id.drama_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.drama_button).setBackgroundResource(R.drawable.drama_selected);
+            findViewById(R.id.drama_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.drama_button).setBackgroundResource(R.drawable.drama);
+            findViewById(R.id.drama_button).setTag(1);
+        }
+
+    }
+
+    public void fantasyG(){
+        if (Integer.parseInt(findViewById(R.id.fantasy_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.fantasy_button).setBackgroundResource(R.drawable.fantasy_selected);
+            findViewById(R.id.fantasy_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.fantasy_button).setBackgroundResource(R.drawable.fantasy);
+            findViewById(R.id.fantasy_button).setTag(1);
+        }
+
+    }
+
+    public void horrorG(){
+        if (Integer.parseInt(findViewById(R.id.horror_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.horror_button).setBackgroundResource(R.drawable.horror_selected);
+            findViewById(R.id.horror_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.horror_button).setBackgroundResource(R.drawable.horror);
+            findViewById(R.id.horror_button).setTag(1);
+        }
+
+    }
+
+    public void historyG(){
+        if (Integer.parseInt(findViewById(R.id.history_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.history_button).setBackgroundResource(R.drawable.history_selected);
+            findViewById(R.id.history_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.history_button).setBackgroundResource(R.drawable.history);
+            findViewById(R.id.history_button).setTag(1);
+        }
+
+    }
+    public void mysteryG(){
+        if (Integer.parseInt(findViewById(R.id.mystery_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.mystery_button).setBackgroundResource(R.drawable.mystery_selected);
+            findViewById(R.id.mystery_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.mystery_button).setBackgroundResource(R.drawable.mystery);
+            findViewById(R.id.mystery_button).setTag(1);
+        }
+
+    }
+    public void romanceG(){
+        if (Integer.parseInt(findViewById(R.id.romance_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.romance_button).setBackgroundResource(R.drawable.romance_selected);
+            findViewById(R.id.romance_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.romance_button).setBackgroundResource(R.drawable.romance);
+            findViewById(R.id.romance_button).setTag(1);
+        }
+
+    }
+    public void scifiG(){
+        if (Integer.parseInt(findViewById(R.id.scifi_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.scifi_button).setBackgroundResource(R.drawable.scifi_selected);
+            findViewById(R.id.scifi_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.scifi_button).setBackgroundResource(R.drawable.scifi);
+            findViewById(R.id.scifi_button).setTag(1);
+        }
+
+    }
+
+    public void thrillerG(){
+        if (Integer.parseInt(findViewById(R.id.thriller_button).getTag().toString()) == 1)
+        {
+            findViewById(R.id.thriller_button).setBackgroundResource(R.drawable.thriller_selected);
+            findViewById(R.id.thriller_button).setTag(2);
+        }
+        else
+        {
+            findViewById(R.id.thriller_button).setBackgroundResource(R.drawable.thriller);
+            findViewById(R.id.thriller_button).setTag(1);
+        }
 
     }
 
