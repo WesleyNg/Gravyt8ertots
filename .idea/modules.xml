@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CharacterCharts.iml" filepath="$PROJECT_DIR$/CharacterCharts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Gravyt8erots.iml" filepath="$PROJECT_DIR$/Gravyt8erots.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Gravyt8ertots.iml" filepath="$PROJECT_DIR$/Gravyt8ertots.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CharChartsTake2.iml" filepath="$PROJECT_DIR$/CharChartsTake2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
