@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
         if(firstTime.equalsIgnoreCase("true")){
 
-            appDB.addStory(new StoryClass("Harry Potter","[2, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1]","2131492993","2131492997"));
-            appDB.addStory(new StoryClass("Wowl Witer: The Biwogwaphy", "[2, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2]", "2131492992", "2131492998"));
+            appDB.addStory(new StoryClass("Harry Potter","[2, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1]","Young Adult","Fiction"));
+            appDB.addStory(new StoryClass("Wowl Witer: The Biwogwaphy", "[2, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2]", "Adult", "Non-Fiction"));
 
             SharedPreferences.Editor editor = sharePref.edit();
             editor.putString(getString(R.string.first_time_key), "false");

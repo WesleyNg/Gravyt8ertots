@@ -108,12 +108,12 @@ public class StoryFragment extends Fragment {
 
         ImageView delStory = (ImageView) storyview.findViewById(R.id.erase_button);
 
-        delStory.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        delStory.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        switch (which){
+                        switch (which) {
                             case DialogInterface.BUTTON_POSITIVE:
                                 List<StoryClass> storyList = appDB.getAllStories();
                                 for (StoryClass s : storyList) {
@@ -140,8 +140,8 @@ public class StoryFragment extends Fragment {
         });
 
         ImageView closeEdit = (ImageView) storyview.findViewById(R.id.exit_button);
-        closeEdit.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        closeEdit.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 getActivity().findViewById(R.id.story_fragment_id).setVisibility(View.INVISIBLE);
             }
         });
@@ -159,40 +159,61 @@ public class StoryFragment extends Fragment {
                         Log.v("taggy", genreTags[i]);
                     }
 
-                    String ageStr = getAge();
-                    String classiStr = getClassi();
                     String genreStr = Arrays.toString(genreTags);
                     strToArr(genreStr);
-                    String newTitle = storyTitle.getText().toString();
-                    appDB.addStory(new StoryClass(newTitle, genreStr, ageStr, classiStr));
-                    populateListView();
-                    getActivity().findViewById(R.id.story_fragment_id).setVisibility(View.INVISIBLE);
-                    Log.v("taggy","genreStr saved: " + genreStr);
+                    if(genreStr.equalsIgnoreCase("[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]") ||
+                            storyTitle.getText().toString().equalsIgnoreCase("") ||
+                            ageGroup.getCheckedRadioButtonId() == -1 ||
+                            classiGroup.getCheckedRadioButtonId() == -1)
+                    {
+                        DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which) {
+                                    case DialogInterface.BUTTON_POSITIVE:
+                                        break;
+                                }
+                            }
+                        };
+                        // Confirmation prompt
+                        AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
+                        builder.setMessage("One or more of the require fields are empty!").setPositiveButton("Cancel", dialogClickListener)
+                                .show();
+                    }
+                    else{
+                        String ageStr = getAge();
+                        String classiStr = getClassi();
+                        String newTitle = storyTitle.getText().toString();
+                        appDB.addStory(new StoryClass(newTitle, genreStr, ageStr, classiStr));
+                        populateListView();
+                        getActivity().findViewById(R.id.story_fragment_id).setVisibility(View.INVISIBLE);
+                        Log.v("taggy","genreStr saved: " + genreStr);
+                    }
                 }
             });
         }
 
         else{
-            String ageIdNum = getArguments().getString("ageKey");
+            String ageId = getArguments().getString("ageKey");
             int ageInt=R.id.age_radioButton;
 
-            if (ageIdNum.equalsIgnoreCase("2131492992")){
+            if (ageId.equalsIgnoreCase("Children")){
                 ageInt = R.id.age_radioButton;
             }
-            else if(ageIdNum.equalsIgnoreCase("2131492993")){
+            else if(ageId.equalsIgnoreCase("Young Adult")){
                 ageInt = R.id.age_radioButton2;
             }
-            else if(ageIdNum.equalsIgnoreCase("2131492994")){
+            else if(ageId.equalsIgnoreCase("Adult")){
                 ageInt = R.id.age_radioButton3;
             }
 
-            String classiIdNum = getArguments().getString("classiKey");
+            String classiId = getArguments().getString("classiKey");
             int classiInt = R.id.classification_radioButton;
 
-            if(classiIdNum.equalsIgnoreCase("2131492997")){
+            if(classiId.equalsIgnoreCase("Fiction")){
                 classiInt = R.id.classification_radioButton;
             }
-            else if(classiIdNum.equalsIgnoreCase("2131492998")){
+            else if(classiId.equalsIgnoreCase("Non-Fiction")){
                 classiInt = R.id.classification_radioButton2;
             }
 
@@ -211,11 +232,11 @@ public class StoryFragment extends Fragment {
             dramaGLoad(storyview);
             fantasyGLoad(storyview);
             horrorGLoad(storyview);
-        historyGLoad(storyview);
+            historyGLoad(storyview);
             mysteryGLoad(storyview);
             romanceGLoad(storyview);
-        scifiGLoad(storyview);
-        thrillerGLoad(storyview);
+            scifiGLoad(storyview);
+            thrillerGLoad(storyview);
 
 
             saveBtn.setOnClickListener(new View.OnClickListener() {
@@ -235,7 +256,11 @@ public class StoryFragment extends Fragment {
                             String genreStr = Arrays.toString(genreTags);
                             strToArr(genreStr);
                             s.setAge(ageStr);
+                            Log.v("taggy", "age before: " + s.getAge());
+                            Log.v("taggy", "age after: " + ageStr);
                             s.setClassi(classiStr);
+                            Log.v("taggy", "age before: " + s.getClassi());
+                            Log.v("taggy", "age after: " + classiStr);
                             s.setGenre(genreStr);
                             String newTitle = storyTitle.getText().toString();
                             s.setTitle(newTitle);
@@ -254,7 +279,8 @@ public class StoryFragment extends Fragment {
     public String getAge(){
         ageGroup = (RadioGroup) getView().findViewById(R.id.age_radio_group);
         int selectedAge = ageGroup.getCheckedRadioButtonId();
-        String ageStr = Integer.toString(selectedAge);
+        ageBtn = (RadioButton) getView().findViewById(selectedAge);
+        String ageStr = ageBtn.getText().toString();
         return ageStr;
     }
 
