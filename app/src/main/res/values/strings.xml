@@ -36,4 +36,76 @@
 
     <string name="preference_file_key">WR_PREFERENCE_KEY</string>
     <string name="first_time_key">true</string>
+
+    <!-- For char_fragment_one      - Blake Martin -->
+    <string name="character_name_input">Name of Character</string>
+    <string name="basic_info">Basic Info</string>
+    <string name="direction">Direction</string>
+    <string name="protagonist">Protagonist</string>
+    <string name="antagonist">Antagonist</string>
+    <string name="other">Other</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age">Age</string>
+    <string name="location">Location</string>
+    <string name="occupation">Occupation</string>
+    <string name="income">Income</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="physical_features">Physical Features</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="eye_color">Eye Color</string>
+    <string name="hair_color">Hair Color</string>
+    <string name="nationality">Nationality</string>
+
+    <!-- For char_fragment_two      - Blake Martin -->
+    <string name="title_char_page_two">Personality</string>
+    <string name="pair_one_one">Hardworking</string>
+    <string name="pair_one_two">Lazy</string>
+    <string name="pair_two_one">Happy</string>
+    <string name="pair_two_two">Sad</string>
+    <string name="pair_three_one">Smart</string>
+    <string name="pair_three_two">Dumb</string>
+    <string name="pair_four_one">Polite</string>
+    <string name="pair_four_two">Rude</string>
+    <string name="pair_five_one">Selfish</string>
+    <string name="pair_five_two">Thoughtful</string>
+    <string name="pair_six_one">Quiet</string>
+    <string name="pair_six_two">Noisy</string>
+    <string name="pair_seven_one">Brave</string>
+    <string name="pair_seven_two">Afraid</string>
+    <string name="pair_eight_one">Calm</string>
+    <string name="pair_eight_two">Nervous</string>
+
+    <!-- For char_fragment three    - Blake Martin -->
+    <string name="title_char_page_three">Interests</string>
+    <string name="page_three_item_1">Sports</string>
+    <string name="page_three_item_2">Yoga</string>
+    <string name="page_three_item_3">Running</string>
+    <string name="page_three_item_4">Music</string>
+    <string name="page_three_item_5">Writing</string>
+    <string name="page_three_item_6">Reading</string>
+    <string name="page_three_item_7">Photography</string>
+    <string name="page_three_item_8">Art</string>
+    <string name="page_three_item_9">Food</string>
+    <string name="page_three_item_10">Relaxing</string>
+    <string name="page_three_item_11">Camping</string>
+    <string name="page_three_item_12">Hiking</string>
+    <string name="page_three_item_13">Traveling</string>
+    <string name="page_three_item_14">Dancing</string>
+    <string name="page_three_item_15">Cooking</string>
+    <string name="page_three_item_16">Baking</string>
+    <string name="page_three_item_17">Crafts</string>
+    <string name="page_three_item_18">Gardening</string>
+    <string name="page_three_item_19">Hunting</string>
+    <string name="page_three_item_20">Learning</string>
+    <string name="page_three_item_21">Socializing</string>
+    <string name="page_three_item_22">Sleeping</string>
+    <string name="page_three_item_23">Cars</string>
+    <string name="page_three_item_24">Swimming</string>
+    <string name="page_three_item_25">Gaming</string>
+
 </resources>
