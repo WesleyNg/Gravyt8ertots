@@ -105,8 +105,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 TextView textView = (TextView) viewClicked;
-                String message = "You clicked # " + position + ", which is the story: " + textView.getText().toString();
-                Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
 
                 String ageG = "2131492993";
                 String classi = "2131492998";
