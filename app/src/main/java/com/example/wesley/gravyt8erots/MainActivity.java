@@ -372,4 +372,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void closeEditor(View view)
+    {
+        findViewById(R.id.story_fragment_id).setVisibility(View.INVISIBLE);
+    }
 }
