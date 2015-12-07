@@ -21,7 +21,7 @@
             android:layout_marginTop="15dp"
             android:id="@+id/exit_button"
             android:background="@drawable/exit"
-            android:onClick="closeEditor"
+            android:padding="10dp"
             />
         <ImageView
             android:layout_width="wrap_content"
