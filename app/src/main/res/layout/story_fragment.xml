@@ -44,20 +44,28 @@
             android:layout_marginTop="50dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             />
-        <TextView android:text="@string/edit_date"
-            android:id="@+id/edit_date_text"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/new_title_edit_text"
-            android:layout_marginTop="37dp"
+            android:text="@string/brief_synopsis"
+            android:id="@+id/synopsis_id"
+            android:layout_alignTop="@id/new_title_edit_text"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="70dp" />
+        <EditText
+            android:id="@+id/synopsis_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/synopsis_id"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             />
         <TextView android:text="@string/select_genre"
             android:id="@+id/select_genre_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/edit_date_text"
-            android:layout_marginTop="50dp"
+            android:layout_alignTop="@+id/synopsis_id"
+            android:layout_marginTop="150dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             />
 
