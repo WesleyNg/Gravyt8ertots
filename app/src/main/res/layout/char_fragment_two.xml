@@ -419,5 +419,15 @@
             android:layout_marginTop="30dp"
             android:layout_marginLeft="330dp"/>
 
+        <Button
+            android:id="@+id/char_two_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eight_radio_group"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/save_and_continue_text"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
     </RelativeLayout>
 </ScrollView>

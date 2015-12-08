@@ -306,7 +306,6 @@
             android:background="@drawable/gaming"
             android:tag="1"
             android:onClick="onClick"
-            android:layout_marginBottom="60dp"
             />
 
 
@@ -584,5 +583,16 @@
             android:id="@+id/gaming_label"
             android:text="@string/page_three_item_25"
             />
+
+        <Button
+            android:id="@+id/char_three_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gaming_label"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/save_and_continue_text"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
     </RelativeLayout>
 </ScrollView>

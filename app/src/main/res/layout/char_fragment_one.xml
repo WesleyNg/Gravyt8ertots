@@ -344,8 +344,7 @@
             android:id="@+id/nationality_id"
             android:layout_alignTop="@id/hair_color_id"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="60dp"/>
+            android:layout_marginTop="60dp" />
         <EditText
             android:id="@+id/nationality_edit_text"
             android:layout_width="220dp"
@@ -354,6 +353,16 @@
             android:layout_marginTop="-15dp"
             android:layout_marginLeft="150dp"
             />
+
+        <Button
+            android:id="@+id/char_one_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nationality_id"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/save_and_continue_text"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
 
     </RelativeLayout>
 </ScrollView>
