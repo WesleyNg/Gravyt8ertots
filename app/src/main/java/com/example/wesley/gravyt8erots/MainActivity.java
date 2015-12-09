@@ -6,6 +6,7 @@ package com.example.wesley.gravyt8erots;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
@@ -102,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View viewClicked, int position, long id) {
 
+                Intent intent = new Intent(getBaseContext(), CharacterActivity.class);
+                startActivity(intent);
+
+                /* Code for Edit Button
                 if (findViewById(R.id.story_fragment_id).getVisibility() == View.INVISIBLE) {
                     findViewById(R.id.story_fragment_id).setVisibility(View.VISIBLE);
                 }
@@ -132,7 +137,8 @@ public class MainActivity extends AppCompatActivity {
                     oldFrag.setArguments(bundle);
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.story_fragment_id, oldFrag).commit();
-                }
+                }*/
+
             }
         });
     }

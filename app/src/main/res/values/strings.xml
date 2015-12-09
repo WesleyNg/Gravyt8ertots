@@ -107,5 +107,6 @@
     <string name="page_three_item_23">Cars</string>
     <string name="page_three_item_24">Swimming</string>
     <string name="page_three_item_25">Gaming</string>
+    <string name="title_activity_character">CharacterActivity</string>
 
 </resources>

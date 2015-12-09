@@ -8,4 +8,5 @@
     <dimen name="r_button_three">90dp</dimen>
     <dimen name="r_button_five">70dp</dimen>
     <dimen name="r_button_line">60dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
